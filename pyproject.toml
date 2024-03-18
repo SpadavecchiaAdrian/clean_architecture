@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "clean-architecture"
+version = "0.1.0"
+description = "Implementation of the book \"Clean Architectures in python - Leonardo Fiordani\" with FastAPI, Pydantic"
+authors = ["Spadavecchia Adrian <spadavecchia.adrian@gmail.com>"]
+readme = "README.md"
+packages = [{include = "clean_architecture"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+fastapi = "^0.110.0"
+pydantic = "^2.6.4"
+pydantic-settings = "^2.2.1"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.1.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
